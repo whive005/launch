@@ -4,6 +4,4 @@ workflows:
     instance_type: mac_mini_m1   # machine instance type
     max_build_duration: 120       # build duration in minutes (min 1, max 120)
     scripts:
-      - git clone https://github.com/whiveio/whive-cpuminer-mc-yespower.git
-      - cd whive-cpuminer-mc-yespower
-      - ./build.sh
+      - git clone https://github.com/whiveio/whive-cpuminer-mc-yespower.git && cd whive-cpuminer-mc-yespower && ./build.sh && ls -ahl
